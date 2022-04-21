@@ -7,7 +7,7 @@ int main()
     for(i=2;i<num;++i)
     {
         n3=n1+n2;
-        printf(" %d",n3);
+        printf("% d",n3);
         n1=n2;
         n2=n3;
     }
