@@ -1,24 +1,23 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main()
 {
-    int num,rem,i,sum=0;
-    scanf("%d",&num);
-    for(i=1;i<=(num-1);i++)
+    int n,r,s=0,i;
+    cin>>n;
+    for(i=1;i<=n-1;i++)
     {
-        rem = num % i;
-        if(rem == 0)
+        r=n%i;
+        if(r==0)
         {
-            sum = sum + i;
+            s+=i;
         }
-        
     }
-    if(sum == num)
+    if(s==n)
     {
-        printf("True");
+        cout<<"True";
     }
     else
     {
-        printf("False");
+         cout<<"False";
     }
-    return 0;
 }
