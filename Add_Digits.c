@@ -1,20 +1,18 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main()
 {
-    int num,rem,sum=0;
-    scanf("%d",&num);
-    while(num/10!=0)
+    int n,r,s=0;
+    cin>>n;
+    while(n/10!=0){
+        s=0;
+    while(n!=0)
     {
-        sum=0;
-        while(num!=0)
-        {
-           rem=num%10;
-           sum+=rem;
-           num=num/10;
-        }
-        num=sum;
+        r=n%10;
+        s+=r;
+        n=n/10;
     }
-    printf("%d",sum);
-    
-    return 0;
+    n=s;
+    }
+    cout<<s;
 }
