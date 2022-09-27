@@ -1,23 +1,22 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main()
 {
-    int num,s=0,m=1,temp,d;
-    scanf("%d",&num);
-    temp=num;
-    while(temp!=0)
+    int n,p=1,s=0,r;
+    cin>>n;
+    while(n>0)
     {
-        d=temp%10;
-        s=s+d;
-        m=m*d;
-        temp=temp/10;
+        r=n%10;
+        s+=r;
+        p*=r;
+        n/=10;
     }
-    if(s==m)
+    if(s==p)
     {
-        printf("Spy Number");
+       cout<<"Spy Number";
     }
     else
     {
-        printf("Not Spy Number");
+        cout<<"Not Spy Number";
     }
-    return 0;
 }
