@@ -1,23 +1,22 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main()
 {
-    int n,d,s=0,sq;
-    scanf("%d",&n);
+    int n,s=0,r,sq;
+    cin>>n;
     sq=n*n;
     while(sq!=0)
     {
-        d=sq%10;
-        s+=d;
-        sq=sq/10;
+        r=sq%10;
+        s+=r;
+        sq/=10;
     }
-    if(s==n)
+    if(n==s)
     {
-        printf("Neon Number");
+        cout<<"Neon Number";
     }
     else
     {
-        printf("Not Neon Number");
+        cout<<"Not Neon Number";
     }
-    return 0;
-    
 }
