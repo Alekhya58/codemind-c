@@ -1,10 +1,14 @@
-#include<stdio.h>
+#include<iostream>
+#include <iomanip>
+using namespace std;
 int main()
 {
-    int r;
-    float pi=3.14;
+    float r;
     float area;
-    scanf("%d",&r);
+    float const pi=3.14;
+    cin>>r;
     area=pi*r*r;
-    printf("%.2f",area);
+    cout<<setprecision(2);
+    cout<<fixed;
+	cout<<area;
 }
